@@ -20,9 +20,9 @@ if (isset($_POST['id']) && isset($_POST['fields'])) {
     $values[] = $id; // it will add id of the selected row
 
   
-    $stmt = $conn->prepare("UPDATE organization SET $Query WHERE id = ?");
-    $stmt->bind_param($types, ...$values);
-    if ($stmt->execute()) {
+    $query = $conn->prepare("UPDATE organization SET $Query WHERE id = ?");
+    $query->bind_param($types, ...$values);
+    if ($query->execute()) {
         echo "Record updated successfully.";
     } else {
         echo "Error updating record.";
