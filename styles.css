@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for Main Content */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url('path/to/your/background-image.jpg'); /* Adjust the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Centered Header */
+h1 {
+    color: #333;
+    text-align: center; /* Center align the header */
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(to right, #4CAF50, #2196F3); /* Gradient background */
+    color: white;
+    border-radius: 8px;
+}
+
+/* Header for View Records */
+h2 {
+    color: #333;
+    text-align: center; /* Center align the header */
+    margin: 20px 0;
+    padding: 10px;
+    background: linear-gradient(to right, #4CAF50, #2196F3); /* Gradient background */
+    color: white;
+    border-radius: 8px;
+}
+
+/* Flex Container for Forms and Bulk Insert */
+.forms-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Spacing for Buttons and Forms */
+button, .form-container, .bulk-insert-container {
+    margin-bottom: 20px; /* Add space below buttons and forms */
+}
+
+/* Insert Form Container */
+.form-container {
+    flex: 1; /* Allow it to grow and fill available space */
+    margin-right: 10px; /* Space between form and bulk insert */
+}
+
+/* Bulk Insert Container */
+.bulk-insert-container {
+    flex: 1; /* Allow it to grow and fill available space */
+    width: 300px; /* Fixed width for the box */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the content */
+}
+
+/* Bulk Insert Heading */
+.bulk-insert-container h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 18px; /* Adjust font size for better appearance */
+    background: linear-gradient(to right, #4CAF50, #2196F3); /* Gradient background */
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Form Styles */
+.form-container label {
+    display: block;
+    margin: 8px 0 4px;
+}
+
+.form-container input {
+    width: calc(100% - 22px);
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/* Submit Button */
+.form-container input[type="submit"], .bulk-insert-container input[type="submit"] {
+    background-color: #4CAF50; /* Green submit button */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 15px;
+}
+
+.form-container input[type="submit"]:hover, .bulk-insert-container input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for the table */
+    margin: 20px 0; /* Add margin above and below the table */
+}
+
+/* Table Header and Cells */
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50; /* Green header background */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for alternate rows */
+}
+
+tr:hover {
+    background-color: #ddd; /* Darker gray on hover */
+}
+
+/* Editable Field Styling 
+.data-field {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 6px;
+    border-radius: 4px;
+}
+*/
+/* Button Styling */
+.btn, .save-btn, .delete-btn, .edit-btn {
+    background-color: #4CAF50; /* Default Green button */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, opacity 0.3s; /* Smooth transitions */
+}
+
+.save-btn {
+    background-color: #2196F3; /* Blue button */
+}
+
+.delete-btn {
+    background-color: #f44336; /* Red button */
+}
+
+.save-btn:hover, .edit-btn:hover, .delete-btn:hover {
+    opacity: 0.8; /* Slightly transparent on hover */
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
