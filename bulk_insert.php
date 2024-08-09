@@ -72,4 +72,3 @@ if (isset($_FILES['csv_file']['tmp_name'])) {
 } else {
     echo "Error: No file uploaded.";
 }
-?>
